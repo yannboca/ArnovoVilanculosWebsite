@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D'LURDES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header id="header">
+  <div class="logo">
+    D'LURDES
+    <img src="images/logo.jpeg" alt="D'LURDES Logo">
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="atelier.html" class="nav-link">Atelier</a>
+    <a href="#account" class="nav-link">Account</a>
+  </nav>
+  <div class="nav-toggle" id="navToggle">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <p class="hero-eyebrow">Exclusive · One-of-One</p>
+    <h1>Where Couture<br><em>Becomes Identity</em></h1>
+    <p class="hero-sub">One-of-one creations crafted for individuality.</p>
+    <a href="atelier.html" class="btn">Book Atelier Session</a>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section class="about reveal-section">
+  <div class="about-inner">
+    <div class="about-label">The House</div>
+    <h2>About LURDES</h2>
+    <p>
+      Luxury fashion treated as collectible art.
+      Every creation exists as a singular expression of craftsmanship,
+      rarity and personal identity.
+    </p>
+    <div class="about-stats">
+      <div class="stat">
+        <span class="stat-num">01</span>
+        <span class="stat-desc">Piece per Client</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">∞</span>
+        <span class="stat-desc">Lifetime Craftsmanship</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-desc">Authenticated</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="collection reveal-section">
+  <div class="section-header">
+    <div class="about-label">Collection</div>
+    <h2>Featured Capsule Collection</h2>
+  </div>
+  <div class="cards">
+    <div class="card reveal-card">
+      <div class="card-img-wrap">
+        <img src="images/collection1.jpeg" alt="Capsule 01">
+        <div class="card-overlay">
+          <a href="atelier.html" class="card-cta">Enquire</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Capsule 01</span>
+        <p>Quiet luxury for everyday expression.</p>
+      </div>
+    </div>
+    <div class="card reveal-card">
+      <div class="card-img-wrap">
+        <img src="images/collection2.jpeg" alt="Capsule 02">
+        <div class="card-overlay">
+          <a href="atelier.html" class="card-cta">Enquire</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Capsule 02</span>
+        <p>Inspired by couture craftsmanship.</p>
+      </div>
+    </div>
+    <div class="card reveal-card">
+      <div class="card-img-wrap">
+        <img src="images/collection3.jpeg" alt="Capsule 03">
+        <div class="card-overlay">
+          <a href="atelier.html" class="card-cta">Enquire</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Capsule 03</span>
+        <p>Rare pieces designed to last.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="account" class="account reveal-section">
+  <div class="account-inner">
+    <div class="about-label">Membership</div>
+    <h2>Create Your LURDES Identity</h2>
+    <p>
+      Choose a personal username and unlock exclusive invitations,
+      recommendations and collection previews.
+    </p>
+    <form class="luxury-form" id="accountForm" onsubmit="handleAccount(event)">
+      <div class="input-wrap">
+        <input type="text" id="username" placeholder=" " required>
+        <label for="username">Choose Username</label>
+      </div>
+      <button type="submit" class="btn">Create Account</button>
+      <p class="form-msg" id="accountMsg"></p>
+    </form>
+  </div>
+</section>
+
+<section class="newsletter reveal-section">
+  <div class="newsletter-inner">
+    <div class="about-label">Editorial</div>
+    <h2>Stay Connected</h2>
+    <form class="luxury-form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+      <div class="input-wrap">
+        <input type="email" id="emailInput" placeholder=" " required>
+        <label for="emailInput">Email Address</label>
+      </div>
+      <button type="submit" class="btn">Subscribe</button>
+      <p class="form-msg" id="newsletterMsg"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">D'LURDES</div>
+    <p class="footer-copy">© 2026 D'LURDES — All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="JS/script.js"></script>
+</body>
+</html>

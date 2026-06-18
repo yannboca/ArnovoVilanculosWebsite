@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Atelier | D'LURDES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header id="header">
+  <div class="logo">D'LURDES</div>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="atelier.html" class="nav-link active">Atelier</a>
+  </nav>
+  <div class="nav-toggle" id="navToggle">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<section class="atelier-hero">
+  <div class="atelier-hero-inner reveal">
+    <p class="hero-eyebrow">Private Experience</p>
+    <h1>The Private<br><em>Atelier</em></h1>
+    <p class="hero-sub">A one-to-one journey through craftsmanship, artistry and individuality.</p>
+  </div>
+</section>
+
+<section class="process reveal-section">
+  <div class="section-header">
+    <div class="about-label">Process</div>
+    <h2>Our Couture Process</h2>
+  </div>
+  <div class="steps">
+    <div class="step" data-step="1">
+      <div class="step-num">01</div>
+      <div class="step-title">Consultation</div>
+      <div class="step-desc">We listen to your vision, lifestyle and identity before a single sketch is drawn.</div>
+    </div>
+    <div class="step" data-step="2">
+      <div class="step-num">02</div>
+      <div class="step-title">Design Development</div>
+      <div class="step-desc">Sketches, fabric selects and concept refinement crafted exclusively for you.</div>
+    </div>
+    <div class="step" data-step="3">
+      <div class="step-num">03</div>
+      <div class="step-title">Measurements</div>
+      <div class="step-desc">Precise body mapping ensuring a silhouette that exists only for you.</div>
+    </div>
+    <div class="step" data-step="4">
+      <div class="step-num">04</div>
+      <div class="step-title">Garment Creation</div>
+      <div class="step-desc">Master artisans bring the design to life with exceptional material and care.</div>
+    </div>
+    <div class="step" data-step="5">
+      <div class="step-num">05</div>
+      <div class="step-title">Final Fitting</div>
+      <div class="step-desc">Your piece is delivered and refined until it is exactly right.</div>
+    </div>
+  </div>
+</section>
+
+<section class="booking reveal-section">
+  <div class="booking-inner">
+    <div class="about-label">Appointment</div>
+    <h2>Book Your Appointment</h2>
+    <form class="luxury-form" id="bookingForm" onsubmit="handleBooking(event)">
+      <div class="form-row">
+        <div class="input-wrap">
+          <input type="text" id="bookName" placeholder=" " required>
+          <label for="bookName">Full Name</label>
+        </div>
+        <div class="input-wrap">
+          <input type="email" id="bookEmail" placeholder=" " required>
+          <label for="bookEmail">Email Address</label>
+        </div>
+      </div>
+      <div class="input-wrap">
+        <input type="date" id="bookDate" required>
+        <label for="bookDate" class="date-label">Preferred Date</label>
+      </div>
+      <button type="submit" class="btn">Request Appointment</button>
+      <p class="form-msg" id="bookingMsg"></p>
+    </form>
+  </div>
+</section>
+
+<section class="authentication reveal-section">
+  <div class="auth-inner">
+    <div class="about-label">Authenticity</div>
+    <h2>Digital Garment Authentication</h2>
+    <p>Enter your garment code to verify ownership and provenance.</p>
+    <div class="auth-form">
+      <div class="input-wrap">
+        <input type="text" id="code" placeholder=" ">
+        <label for="code">Garment Code — e.g. LURDES-001</label>
+      </div>
+      <button class="btn" onclick="verifyCode()">Verify Piece</button>
+    </div>
+    <div id="result" class="auth-result"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">D'LURDES</div>
+    <p class="footer-copy">© 2026 D'LURDES — All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
